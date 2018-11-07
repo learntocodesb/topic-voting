@@ -2,3 +2,9 @@ type User {
   id: ID! @unique
   name: String!
 }
+
+type Topic {
+  id: ID! @unique
+  name: String!
+  createdBy: User!
+}
